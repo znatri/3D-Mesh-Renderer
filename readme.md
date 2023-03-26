@@ -1,27 +1,32 @@
-# Geodesic Surface Modification with Triangle Subdivision
+# 3D Mesh Renderer
 
-This project is a Python program that reads in polyhedral models and creates geodesic surfaces using triangle subdivision. The program also provides a visualization of corner operations such as next, 
-opposite and swing. All of the mesh objects that are created and modified are composed of only triangles.
+This project is a 3D mesh renderer implemented in C++, which takes Wavefront OBJ files as input and renders the 3D mesh using OpenGL. The renderer supports different shading models, including Phong and Gouraud shading, and also includes camera controls for better visualization of the 3D objects.
 
-## Prerequisites
+![Mesh Renderer Sample Image](sample_image.png)
 
-This program requires the following:
-- [Python 3.x](https://www.python.org/downloads/)
-- [Processing 3.x](https://processing.org/download/)
+## Features
+
+- Load and parse Wavefront OBJ files
+- Render 3D meshes using OpenGL
+- Support for Phong and Gouraud shading models
+- Camera controls for object visualization
+- User-friendly interface
 
 ## Installation
 
-To install this program, download the source code from the GitHub repository. Once the code is downloaded, open the file in Processing and run it.
+1. Download and install [OpenGL](https://www.opengl.org/) and [GLUT](https://www.opengl.org/resources/libraries/glut/) libraries for your platform.
+2. Clone this repository or download the source code.
+3. Build the project using your preferred C++ compiler and development environment.
 
 ## Usage
 
-The program will prompt the user for an input file for the polyhedral model. The user will then be able to modify the model using the triangle subdivision technique. The program also has a visualization of 
-corner operations such as next, opposite, and swing.
+1. Run the compiled executable.
+2. The program will open a window displaying the 3D mesh along with a simple user interface.
+3. Load a Wavefront OBJ file to render the mesh in the window.
+4. Use the interface to switch between shading models (Phong or Gouraud) and control the camera for better visualization.
 
-## Contributing
-
-If you would like to contribute to this project, please feel free to open a pull request and discuss potential changes.
+For more information on modifying the renderer, refer to the source code comments.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
